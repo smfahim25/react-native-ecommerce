@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -7,12 +7,12 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import {COLOURS, Items} from '../database/Database';
+import { COLOURS, Items } from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   const [products, setProducts] = useState([]);
   const [accessory, setAccessory] = useState([]);
 
@@ -44,10 +44,10 @@ const Home = ({navigation}) => {
 
   //create an product reusable card
 
-  const ProductCard = ({data}) => {
+  const ProductCard = ({ data }) => {
     return (
       <TouchableOpacity
-        onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
+        onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
         style={{
           width: '48%',
           marginVertical: 14,
@@ -153,7 +153,7 @@ const Home = ({navigation}) => {
             </View>
           )
         ) : null}
-        <Text>&#8377; {data.productPrice}</Text>
+        <Text>$ {data.productPrice}</Text>
       </TouchableOpacity>
     );
   };
@@ -213,7 +213,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-            Hi-Fi Shop &amp; Service
+            Ema-jhon Shop &amp; Service
           </Text>
           <Text
             style={{
@@ -223,7 +223,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               lineHeight: 24,
             }}>
-            Audio shop on Rustaveli Ave 57.
+            Audio shop on Dhaka av 89.
             {'\n'}This shop offers both products and services
           </Text>
         </View>
