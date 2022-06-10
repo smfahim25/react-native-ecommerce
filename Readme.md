@@ -16,7 +16,7 @@
 - npm install
 - npm start
 
-# npm start comman can start adnroid or ios. just connect the device. 
+# npm start command can start adnroid or ios. just connect the device. 
 # play store app Expo go
 # emulator need the app expo go
 # scan the QR code
