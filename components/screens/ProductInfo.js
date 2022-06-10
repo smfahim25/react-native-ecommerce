@@ -259,7 +259,6 @@ const ProductInfo = ({ route, navigation }) => {
               opacity: 0.5,
               lineHeight: 20,
               maxWidth: '85%',
-              maxHeight: 44,
               marginBottom: 18,
             }}>
             {product.description}
@@ -322,10 +321,10 @@ const ProductInfo = ({ route, navigation }) => {
               }}>
               ${product.productPrice}.00
             </Text>
-            <Text>
+            {/* <Text>
               Tax Rate 2%~ ${product.productPrice / 20} ($
               {product.productPrice + product.productPrice / 20})
-            </Text>
+            </Text> */}
           </View>
         </View>
       </ScrollView>
@@ -347,6 +346,9 @@ const ProductInfo = ({ route, navigation }) => {
             borderRadius: 20,
             justifyContent: 'center',
             alignItems: 'center',
+            marginTop: 20,
+            // marginLeft: '60%',
+            // marginBottom: 20,
           }}>
           <Text
             style={{
